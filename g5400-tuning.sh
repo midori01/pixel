@@ -1,7 +1,6 @@
 #!/system/bin/sh
 
 echo 'Exynos Modem 5400 (Pixel 9/10 Series) configuration'
-
 echo 'Configure 3GPP Release 16 for LTE and NR'
 echo '
 AT+GOOGSETNV="UECAPA_AS_RELEASE",0,"08"\r
@@ -11,8 +10,7 @@ AT+GOOGSETNV="!NRRRC_INSERT_TEST_AS_RELEASE_VER_DS",0,"01,00,00,00"\r
 ' > /dev/umts_router & cat /dev/umts_router
 
 # LTE
-echo 'LTE feature configuration'
-echo 'LTE Category 12/18, Uplink 256QAM, Alternative TBS Indices, Beamforming Reference Signals, Transmit Antenna Selection, VoLTE Recommended Bitrate'
+echo 'LTE Category 12/18, Uplink 256QAM, Alternative TBS Indices, Beamforming Reference Signals, Transmit Antenna Selection and VoLTE Recommended Bitrate'
 echo '
 AT+GOOGSETNV="UECAPA_UE_CATEGORY",0,"0C"\r
 AT+GOOGSETNV="UECAPA_UE_CATEGORY",1,"0C"\r
@@ -44,7 +42,7 @@ AT+GOOGSETNV="UECAPA_REL13_ORIG_DOWNLINK_LAA_SUPPORT",0,"01"\r
 ' > /dev/umts_router & cat /dev/umts_router
 
 # NR
-echo 'Enable NR FR1/FR2, NR Roaming, and Uplink 256QAM'
+echo 'Enable NR FR1/FR2, NR Roaming and Uplink 256QAM'
 echo '
 AT+GOOGSETNV="OEM_GFEATURE_PIXEL_MMW_DISABLE_NEED_TO_DISABLE",0,"00"\r
 AT+GOOGSETNV="OEM_GFEATURE_PIXEL_MMW_DISABLE_NEED_TO_DISABLE_DS",0,"00"\r
@@ -69,7 +67,7 @@ AT+GOOGSETNV="!NRRRC.SIM_OPERATOR_BAND_LIST",0,"00,00"\r
 ' > /dev/umts_router & cat /dev/umts_router
 
 # NR Advanced
-echo 'Enable NR SRS TX Switching, Dynamic Spectrum Sharing, NSA Dynamic Power Sharing, Bandwidth Parts, RRC Inactive State, RRC Segmentation, AGAP, Wake-Up Signal, Conditional Handover, UE Assistance Information, High-Speed Enhancement, Transmit Diversity'
+echo 'Enable NR SRS TX Switching, Dynamic Spectrum Sharing, NSA Dynamic Power Sharing, Bandwidth Parts, RRC Inactive State, RRC Segmentation, AGAP, Wake-Up Signal, Conditional Handover, UE Assistance Information, High-Speed Enhancement and Transmit Diversity'
 echo '
 AT+GOOGSETNV="!NRCAPA.Gen.SrsTxSwitch",0,"01"\r
 AT+GOOGSETNV="!NRCAPA.Switch.DssFeature",0,"01"\r
@@ -137,8 +135,24 @@ AT+GOOGSETNV="!NRRRC.SUPPORTED_NR_BAND_LIST",29,"4C,00"\r
 AT+GOOGSETNV="!NRRRC.NUM_SUPPORTED_NR_BAND_LIST",0,"1E,00"\r
 ' > /dev/umts_router & cat /dev/umts_router
 
+# NR-DC
+echo 'Enable NR Dual Connectivity'
+echo '
+AT+GOOGSETNV="!NRCOMMON.NrDcSupport",0,"01"\r
+AT+GOOGSETNV="!NRCOMMON.NrDcSupport_DS",0,"01"\r
+' > /dev/umts_router & cat /dev/umts_router
+
+# n1 45MHz
+echo 'Enable 45MHz bandwidth for NR Band n1'
+echo '
+AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHDL_V1590_SCS15",0,"00,40"\r
+AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHUL_V1590_SCS15",0,"00,40"\r
+AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHDL_V1590_SCS15_DS",0,"00,40"\r
+AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHUL_V1590_SCS15_DS",0,"00,40"\r
+' > /dev/umts_router & cat /dev/umts_router
+
 # HPUE
-echo 'Enable HPUE for LTE Bands 38/41, NR Bands n38/n40/n41/n77/n78 PC2, and n41/n77/n78 PC1.5'
+echo 'Enable HPUE for LTE Bands 38/41, NR Bands n38/n40/n41/n77/n78 PC2 and n41/n77/n78 PC1.5'
 echo '
 AT+GOOGSETNV="!NRCOMM_PC1DOT5_SUPPORTED_BANDS",0,"29,00"\r
 AT+GOOGSETNV="!NRCOMM_PC1DOT5_SUPPORTED_BANDS",1,"4D,00"\r
@@ -169,20 +183,4 @@ AT+GOOGSETNV="!NRCAPA_NSA_HPUE_BANDS_DS",4,"4E,00"\r
 AT+GOOGSETNV="!LTE.COMMON.HPUE.SUPPORTED_BANDS",0,"26"\r
 AT+GOOGSETNV="!LTE.COMMON.HPUE.SUPPORTED_BANDS",1,"29"\r
 AT+GOOGSETNV="!LTE.COMMON.HPUE.SUPPORTED_BANDS_NUM",0,"02,00"\r
-' > /dev/umts_router & cat /dev/umts_router
-
-# NR-DC
-echo 'Enable NR Dual Connectivity (NR-DC)'
-echo '
-AT+GOOGSETNV="!NRCOMMON.NrDcSupport",0,"01"\r
-AT+GOOGSETNV="!NRCOMMON.NrDcSupport_DS",0,"01"\r
-' > /dev/umts_router & cat /dev/umts_router
-
-# n1 45MHz
-echo 'Enable 45MHz bandwidth for NR Band n1'
-echo '
-AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHDL_V1590_SCS15",0,"00,40"\r
-AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHUL_V1590_SCS15",0,"00,40"\r
-AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHDL_V1590_SCS15_DS",0,"00,40"\r
-AT+GOOGSETNV="UECAPA_NR_RF_BAND_1_CHUL_V1590_SCS15_DS",0,"00,40"\r
 ' > /dev/umts_router & cat /dev/umts_router
