@@ -41,6 +41,15 @@ AT+GOOGSETNV="UECAPA_REL13_DOWNLINK_LAA_SUPPORT",0,"01"\r
 AT+GOOGSETNV="UECAPA_REL13_ORIG_DOWNLINK_LAA_SUPPORT",0,"01"\r
 ' > /dev/umts_router & cat /dev/umts_router
 
+# Additional LTE Bands
+echo 'Enable Additional LTE Bands'
+echo '
+AT+GOOGSETNV="!SAEL3.UPDATE_MCC_BAND_ENABLE",0,"00"\r
+AT+GOOGSETNV="!SAEL3.ALL_RF_BAND_SUPPORT",0,"01"\r
+AT+GOOGSETNV="OEM_GFEATURE_ENABLE_FCC_BANDS",0,"00"\r
+AT+GOOGSETNV="OEM_GFEATURE_ENABLE_FCC_BANDS_DS",0,"00"\r
+' > /dev/umts_router & cat /dev/umts_router
+
 # NR
 echo 'Enable NR FR1/FR2, NR Roaming and Uplink 256QAM'
 echo '
