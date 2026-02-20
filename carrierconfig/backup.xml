@@ -1,0 +1,420 @@
+<bundle>
+<boolean name="force_home_network_bool" value="false" />
+<boolean name="spn_display_rule_use_roaming_from_service_state_bool" value="false" />
+<boolean name="support_cdma_1x_voice_calls_bool" value="false" />
+<boolean name="support_tdscdma_bool" value="false" />
+<boolean name="disable_cdma_activation_code_bool" value="false" />
+<boolean name="qns.block_ipv6_only_wifi_bool" value="false" />
+<boolean name="show_apn_setting_cdma_bool" value="true" />
+<boolean name="use_usim_bool" value="false" />
+<boolean name="qns.support_wfc_recovery_bool" value="false" />
+<boolean name="gps.enable_active_sim_emergency_supl" value="true" />
+<boolean name="cdma_home_registered_plmn_name_override_bool" value="false" />
+<boolean name="support_swap_after_merge_bool" value="true" />
+<boolean name="force_imei_bool" value="false" />
+<boolean name="world_mode_enabled_bool" value="false" />
+<boolean name="iwlan.ike_sa_transforms_reorder_bool" value="true" />
+<boolean name="iwlan.supports_ike_session_multiple_sa_proposals_bool" value="true" />
+<boolean name="vendor.ims.carrier_config_use_aosp_ims_config_bool" value="false" />
+<boolean name="carrier_volte_tty_supported_bool" value="false" />
+<boolean name="show_single_operator_row_in_choose_network_setting_bool" value="false" />
+<boolean name="carrier_cross_sim_ims_available_bool" value="true" />
+<boolean name="show_cdma_choices_bool" value="true" />
+<boolean name="iwlan.update_n1_mode_on_ui_change_bool" value="false" />
+<boolean name="delay_ims_tear_down_until_call_end_bool" value="true" />
+<boolean name="iwlan.supports_child_session_multiple_sa_proposals_bool" value="true" />
+<boolean name="show_iccid_in_sim_status_bool" value="true" />
+<boolean name="carrier_promote_wfc_on_call_fail_bool" value="true" />
+<boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+<boolean name="support_ss_over_cdma_bool" value="true" />
+<boolean name="carrier_wfc_supports_wifi_only_bool" value="true" />
+<boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+<boolean name="enable_cross_sim_calling_on_opportunistic_data_bool" value="true" />
+<boolean name="vonr_setting_visibility_bool" value="true" />
+<boolean name="include_lte_for_nr_advanced_threshold_bandwidth_bool" value="true" />
+<boolean name="editable_wfc_roaming_mode_bool" value="true" />
+<boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+<boolean name="prefer_2g_bool" value="true" />
+<boolean name="4g_only_bool" value="false" />
+<boolean name="show_ims_registration_status_bool" value="true" />
+<boolean name="always_show_data_rat_icon_bool" value="true" />
+<boolean name="format_incoming_number_to_national_for_jp_bool" value="true" />
+<boolean name="carrier_wfc_ims_available_bool" value="true" />
+<boolean name="carrier_volte_available_bool" value="true" />
+<boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true" />
+<boolean name="hide_lte_plus_data_icon_bool" value="false" />
+<boolean name="remove_satellite_plmn_in_manual_network_scan_bool" value="false" />
+<boolean name="vonr_enabled_bool" value="true" />
+<boolean name="enable_carrier_display_name_resolver_bool" value="true" />
+<boolean name="carrier_name_override_bool" value="true" />
+<boolean name="display_hd_plus_icon_bool" value="true" />
+<boolean name="carrier_settings_enable_bool" value="true" />
+<boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+<boolean name="carrier_vt_available_bool" value="true" />
+<boolean name="inflate_signal_strength_bool" value="false" />
+<int name="imsemergency.emergency_registration_timer_millis_int" value="0" />
+<int name="imssms.sms_max_retry_over_ims_count_int" value="0" />
+<int name="qns.minimum_handover_guarding_timer_ms_int" value="3000" />
+<int name="carrier_data_call_retry_network_requested_max_count_int" value="20" />
+<int name="cdma_3waycall_flash_delay_int" value="0" />
+<int name="qns.mms_rat_preference_int" value="3" />
+<int name="qns.xcap_transport_type_int" value="2" />
+<int name="imsrtt.text_rs_bandwidth_bps_int" value="153" />
+<int name="imsrtt.text_rr_bandwidth_bps_int" value="51" />
+<int name="qns.wfc_recovery_pcscf_retry_maximum_time_int" value="350000" />
+<int name="qns.mms_transport_type_int" value="2" />
+<int name="iwlan.handover_to_wwan_release_delay_second_int" value="5" />
+<int name="emergency_sms_mode_timer_ms_int" value="300000" />
+<int name="imsvt.video_rtcp_inactivity_timer_millis_int" value="0" />
+<int name="imsvt.video_rtp_inactivity_timer_millis_int" value="19000" />
+<int name="nr_advanced_threshold_bandwidth_khz_int" value="100000" />
+<int name="cellular_usage_setting_int" value="0" />
+<int name="wfc_spn_format_idx_int" value="10" />
+<int name="lte_plus_threshold_bandwidth_khz_int" value="1" />
+<int name="moder_subId" value="7" />
+<string name="gps.lpp_profile">0</string>
+<string name="__carrier_config_package_version__">57</string>
+<string name="_gcs_carrier_version_">softbank_jp:73000000002;default:73000000008;</string>
+<string name="gps.longterm_psds_server_1">https://1.ssiloc.com/p4/42F3</string>
+<string name="gps.supl_ver">0x20002</string>
+<string name="cdma_home_registered_plmn_name_string"></string>
+<string name="ims.ims_user_agent_string">#MANUFACTURE#_#MODEL#_Android #AV#_#BUILD#</string>
+<string name="carrier_eri_file_name_string">eri.xml</string>
+<string name="gps.nfw_proxy_apps">com.google.android.carrierlocation</string>
+<string name="config_ims_rcs_package_override_string">com.google.android.ims</string>
+<string name="carrier_config_version_string">softbank_jp-73000000002.8&#10;2025-10-30</string>
+<string name="gps.a_glonass_pos_protocol_select">6</string>
+<string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,connected_rrc_idle:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
+<string name="sim_country_iso_override_string"></string>
+<string name="carrier_name_string"></string>
+<string name="show_carrier_data_icon_pattern_string"></string>
+<int-array name="imsss.xcap_over_ut_supported_rats_int_array" num="5">
+<item value="3" />
+<item value="6" />
+<item value="5" />
+<item value="1" />
+<item value="2" />
+</int-array>
+<int-array name="qns.voice_ngran_ssrsrp_int_array" num="2">
+<item value="-110" />
+<item value="-115" />
+</int-array>
+<int-array name="qns.voice_wifi_rssi_int_array" num="2">
+<item value="-75" />
+<item value="-80" />
+</int-array>
+<int-array name="qns.network_validation_fail_restricted_time_int_array" num="2">
+<item value="30000" />
+<item value="0" />
+</int-array>
+<int-array name="imsss.ut_terminal_based_services_int_array" num="2">
+<item value="0" />
+<item value="10" />
+</int-array>
+<int-array name="ims.supported_rats_int_array" num="3">
+<item value="3" />
+<item value="5" />
+<item value="6" />
+</int-array>
+<int-array name="cdma_enhanced_roaming_indicator_for_home_network_int_array" num="1">
+<item value="1" />
+</int-array>
+<int-array name="qns.idle_wifi_rssi_int_array" num="2">
+<item value="-75" />
+<item value="-80" />
+</int-array>
+<int-array name="5g_nr_ssrsrp_thresholds_int_array" num="4">
+<item value="-128" />
+<item value="-118" />
+<item value="-108" />
+<item value="-98" />
+</int-array>
+<int-array name="5g_nr_ssrsrq_thresholds_int_array" num="4">
+<item value="-31" />
+<item value="-19" />
+<item value="-7" />
+<item value="6" />
+</int-array>
+<int-array name="5g_nr_sssinr_thresholds_int_array" num="4">
+<item value="-5" />
+<item value="5" />
+<item value="15" />
+<item value="30" />
+</int-array>
+<long name="5g_watchdog_time_ms_long" value="3600000" />
+<int-array name="qns.video_wifi_rssi_int_array" num="2">
+<item value="-75" />
+<item value="-80" />
+</int-array>
+<int-array name="qns.idle_eutran_rsrp_int_array" num="2">
+<item value="-115" />
+<item value="-120" />
+</int-array>
+<int-array name="qns.voice_eutran_rsrp_int_array" num="2">
+<item value="-115" />
+<item value="-120" />
+</int-array>
+<int-array name="imsss.ut_server_based_services_int_array" num="20">
+<item value="1" />
+<item value="2" />
+<item value="3" />
+<item value="4" />
+<item value="5" />
+<item value="6" />
+<item value="7" />
+<item value="12" />
+<item value="17" />
+<item value="18" />
+<item value="19" />
+<item value="20" />
+<item value="21" />
+<item value="13" />
+<item value="14" />
+<item value="15" />
+<item value="16" />
+<item value="8" />
+<item value="11" />
+<item value="9" />
+</int-array>
+<int-array name="qns.video_geran_rssi_int_array" num="2">
+<item value="-100" />
+<item value="-105" />
+</int-array>
+<int-array name="qns.ho_restrict_time_with_low_rtp_quality_int_array" num="2">
+<item value="60000" />
+<item value="60000" />
+</int-array>
+<int-array name="iwlan.underlying_network_validation_events_int_array" num="3">
+<item value="0" />
+<item value="1" />
+<item value="2" />
+</int-array>
+<int-array name="qns.video_ngran_ssrsrp_int_array" num="2">
+<item value="-110" />
+<item value="-115" />
+</int-array>
+<int-array name="qns.iwlan_underlying_network_validation_condition_int_array" num="2">
+<item value="0" />
+<item value="1" />
+</int-array>
+<int-array name="qns.video_eutran_rsrp_int_array" num="2">
+<item value="-115" />
+<item value="-120" />
+</int-array>
+<int-array name="qns.iwlan_network_validation_condition_int_array" num="3">
+<item value="0" />
+<item value="1" />
+<item value="2" />
+</int-array>
+<int-array name="qns.idle_geran_rssi_int_array" num="2">
+<item value="-100" />
+<item value="-105" />
+</int-array>
+<int-array name="qns.voice_geran_rssi_int_array" num="2">
+<item value="-100" />
+<item value="-105" />
+</int-array>
+<int-array name="imsvoice.audio_inactivity_call_end_reasons_int_array" num="3">
+<item value="0" />
+<item value="2" />
+<item value="4" />
+</int-array>
+<int-array name="qns.video_utran_rscp_int_array" num="2">
+<item value="-105" />
+<item value="-115" />
+</int-array>
+<int-array name="imssms.sms_over_ims_supported_rats_int_array" num="3">
+<item value="3" />
+<item value="6" />
+<item value="5" />
+</int-array>
+<int-array name="qns.idle_ngran_ssrsrp_int_array" num="2">
+<item value="-110" />
+<item value="-115" />
+</int-array>
+<int-array name="carrier_nr_availabilities_int_array" num="2">
+<item value="1" />
+<item value="2" />
+</int-array>
+<int-array name="qns.idle_utran_rscp_int_array" num="2">
+<item value="-105" />
+<item value="-115" />
+</int-array>
+<int-array name="qns.voice_utran_rscp_int_array" num="2">
+<item value="-105" />
+<item value="-115" />
+</int-array>
+<int-array name="additional_nr_advanced_bands_int_array" num="8">
+<item value="41" />
+<item value="77" />
+<item value="78" />
+<item value="79" />
+<item value="257" />
+<item value="258" />
+<item value="260" />
+<item value="261" />
+</int-array>
+<string-array name="iwlan_handover_policy_string_array" num="4">
+<item value="source=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN|UNKNOWN, target=GERAN|UTRAN|EUTRAN|NGRAN|IWLAN, type=disallowed, capabilities=EIMS|MMS|XCAP|CBS" />
+<item value="source=IWLAN|UNKNOWN, target=GERAN|UTRAN, type=disallowed, capabilities=IMS" />
+<item value="source=GERAN|UTRAN, target=IWLAN, type=disallowed, capabilities=IMS" />
+<item value="source=EUTRAN|NGRAN|IWLAN, target=EUTRAN|NGRAN|IWLAN, type=allowed, capabilities=IMS" />
+</string-array>
+<string-array name="support_tdscdma_roaming_networks_string_array" num="0" />
+<string-array name="qns.enable_minimum_guarding_timer_after_connected_apn_string_array" num="1">
+<item value="ims" />
+</string-array>
+<string-array name="ims_reasoninfo_mapping_string_array" num="3">
+<item value="332||510" />
+<item value="332|q.850|510" />
+<item value="510|Call completed elsewhere|1014" />
+</string-array>
+<string-array name="telephony_data_setup_retry_rules_string_array" num="4">
+<item value="capabilities=eims, retry_interval=1000, maximum_retries=20" />
+<item value="permanent_fail_causes=8|27|28|29|30|32|33|35|50|51|111|-5|-6|65537|65538|-3|65543|65547|2252|2253|2254, retry_interval=2500" />
+<item value="capabilities=mms|supl|cbs|rcs, retry_interval=2000" />
+<item value="capabilities=internet|enterprise|dun|ims|fota|xcap|mcx|prioritize_bandwidth|prioritize_latency, retry_interval=2500|3000|5000|10000|15000|20000|40000|60000|120000|240000|600000|1200000|1800000, maximum_retries=20" />
+</string-array>
+<string-array name="carrier_additional_cbs_channels_strings" num="4">
+<item value="0xA800:type=earthquake, emergency=true" />
+<item value="0xAFEE:type=tsunami, emergency=true" />
+<item value="0xAC00-0xAFED:type=other, emergency=true" />
+<item value="0xA802,0xA804:type=etws_default, emergency=true" />
+</string-array>
+<string-array name="imswfc.pidf_short_code_string_array" num="0" />
+<long name="qns.iwlan_network_validation_by_making_ims_call_rate_limit_period_millis_long" value="120000" />
+<int name="imsss.ut_transport_type_int" value="3" />
+<boolean name="call_barring_visibility_bool" value="true" />
+<string name="gps.es_extension_sec">300</string>
+<string-array name="carrier_certificate_string_array" num="1">
+<item value="8CD14DE82459630273B8D4C4F0C7C042FA0EF419C2B76A0AAD3D7A0646B015B9" />
+</string-array>
+<boolean name="imsemergency.emergency_requires_volte_enabled_bool" value="true" />
+<boolean name="imsss.use_csfb_on_xcap_over_ut_failure_bool" value="false" />
+<int-array name="ims.ipsec_encryption_algorithms_int_array" num="1">
+<item value="0" />
+</int-array>
+<boolean name="carrier_force_disable_etws_cmas_test_bool" value="true" />
+<int name="ims.ipv4_sip_mtu_size_cellular_int" value="1300" />
+<int name="ims_dtmf_tone_delay_int" value="300" />
+<int name="ims.request_uri_type_int" value="1" />
+<int name="imsvoice.audio_rtp_inactivity_timer_millis_int" value="10000" />
+<int name="imsvoice.conference_subscribe_type_int" value="0" />
+<int name="imsemergency.cross_stack_redial_timer_sec_int" value="35" />
+<int-array name="imsvoice.srvcc_type_int_array" num="0" />
+<int name="carrier_ussd_method_int" value="2" />
+<boolean name="allow_hold_call_during_emergency_bool" value="false" />
+<boolean name="call_barring_supports_deactivate_all_bool" value="false" />
+<int name="imsss.ut_as_server_port_int" value="443" />
+<boolean name="call_barring_supports_password_change_bool" value="false" />
+<boolean name="hide_enhanced_4g_lte_bool" value="false" />
+<boolean name="editable_enhanced_4g_lte_bool" value="true" />
+<int-array name="imsemergency.emergency_domain_preference_int_array" num="1">
+<item value="2" />
+</int-array>
+<string name="default_vm_number_string">1416</string>
+<int name="imsvoice.session_privacy_type_int" value="2" />
+<boolean name="editable_voicemail_number_setting_bool" value="false" />
+<int name="recipientLimit" value="-1" />
+<boolean name="call_waiting_over_ut_warning_bool" value="true" />
+<int name="gsm_dtmf_tone_delay_int" value="300" />
+<int name="imsvoice.ringback_timer_millis_int" value="600000" />
+<boolean name="imsss.network_initiated_ussd_over_ims_supported_bool" value="false" />
+<int name="maxImageHeight" value="1944" />
+<boolean name="lte_endc_using_user_data_for_rrc_detection_bool" value="true" />
+<int-array name="ims.ipsec_authentication_algorithms_int_array" num="1">
+<item value="1" />
+</int-array>
+<int name="imsemergency.quick_cross_stack_redial_timer_sec_int" value="3" />
+<int name="ims.ipv6_sip_mtu_size_cellular_int" value="1300" />
+<boolean name="nr_advanced_requires_single_cc_above_bandwidth_threshold_bool" value="false" />
+<boolean name="is_ims_conference_size_enforced_bool" value="true" />
+<int name="imsvoice.session_refresher_type_int" value="0" />
+<string name="gps.use_emergency_pdn_for_emergency_supl">0</string>
+<boolean name="nr_timers_reset_if_non_endc_and_rrc_idle_bool" value="true" />
+<boolean name="call_barring_over_ut_warning_bool" value="true" />
+<int-array name="imsemergency.emergency_domain_preference_roaming_int_array" num="2">
+<item value="2" />
+<item value="1" />
+</int-array>
+<boolean name="show_blocking_pay_phone_option_bool" value="true" />
+<boolean name="local_disconnect_empty_ims_conference_bool" value="true" />
+<int name="imsvoice.ringing_timer_millis_int" value="600000" />
+<int-array name="imsemergency.emergency_over_ims_supported_rats_int_array" num="1">
+<item value="3" />
+</int-array>
+<boolean name="always_show_emergency_alert_onoff_bool" value="true" />
+<int name="bsf.bsf_server_port_int" value="8088" />
+<string name="default_vm_number_roaming_string">+819066514170</string>
+<boolean name="caller_id_over_ut_warning_bool" value="true" />
+<int name="maxMessageSize" value="307200" />
+<string-array name="non_roaming_operator_string_array" num="4">
+<item value="44091" />
+<item value="44092" />
+<item value="44093" />
+<item value="44094" />
+</string-array>
+<boolean name="vilte_data_is_metered_bool" value="false" />
+<boolean name="call_forwarding_over_ut_warning_bool" value="true" />
+<int name="maxImageWidth" value="2592" />
+<int name="volte_replacement_rat_int" value="3" />
+<string name="5g_icon_display_grace_period_string"></string>
+<boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+<int name="imsvoice.audio_rtcp_inactivity_timer_millis_int" value="10000" />
+<int name="imsvoice.mo_call_request_timeout_millis_int" value="10000" />
+<int name="imsvoice.dedicated_bearer_wait_timer_millis_int" value="4000" />
+<string-array name="read_only_apn_types_string_array" num="1">
+<item value="ims" />
+</string-array>
+<int name="min_udp_port_4500_nat_timeout_sec_int" value="120" />
+<pbundle_as_map name="imsvoice.amrwb_payload_description_bundle">
+<pbundle_as_map name="105">
+<int name="imsvoice.amr_codec_attribute_payload_format_int" value="1" />
+</pbundle_as_map>
+</pbundle_as_map>
+<pbundle_as_map name="imsvoice.audio_codec_capability_payload_types_bundle">
+<int-array name="imsvoice.evs_payload_type_int_array" num="2">
+<item value="127" />
+<item value="126" />
+</int-array>
+<int-array name="imsvoice.dtmfwb_payload_type_int_array" num="1">
+<item value="96" />
+</int-array>
+<int-array name="imsvoice.amrwb_payload_type_int_array" num="3">
+<item value="100" />
+<item value="105" />
+<item value="104" />
+</int-array>
+<int-array name="imsvoice.dtmfnb_payload_type_int_array" num="1">
+<item value="97" />
+</int-array>
+<int-array name="imsvoice.amrnb_payload_type_int_array" num="3">
+<item value="98" />
+<item value="103" />
+<item value="102" />
+</int-array>
+</pbundle_as_map>
+<pbundle_as_map name="imsvoice.amrnb_payload_description_bundle">
+<pbundle_as_map name="103">
+<int name="imsvoice.amr_codec_attribute_payload_format_int" value="1" />
+</pbundle_as_map>
+</pbundle_as_map>
+<pbundle_as_map name="imsvoice.evs_payload_description_bundle">
+<pbundle_as_map name="126">
+<int-array name="imsvoice.evs_codec_attribute_bitrate_int_array" num="2">
+<item value="0" />
+<item value="6" />
+</int-array>
+<int name="imsvoice.evs_codec_attribute_bandwidth_int" value="1" />
+<int name="imsvoice.evs_codec_attribute_ch_aw_recv_int" value="2" />
+</pbundle_as_map>
+<pbundle_as_map name="127">
+<int-array name="imsvoice.evs_codec_attribute_bitrate_int_array" num="2">
+<item value="3" />
+<item value="6" />
+</int-array>
+<int name="imsvoice.evs_codec_attribute_bandwidth_int" value="2" />
+<int name="imsvoice.evs_codec_attribute_ch_aw_recv_int" value="2" />
+</pbundle_as_map>
+</pbundle_as_map>
+</bundle>
