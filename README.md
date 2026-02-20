@@ -1,0 +1,1 @@
+This repository serves as a personal backup for various bits and pieces I've used to customize my Pixel experience. Most of the contents here are experimental, highly specific to my own setup, use at your own risk.
